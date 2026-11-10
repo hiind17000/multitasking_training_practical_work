@@ -35,7 +35,6 @@ static void *display( void *parameters )
 	while(diffCount < DISPLAY_LOOP_LIMIT){
 		sleep(DISPLAY_SLEEP_TIME);
 		//TODO
-
 	}
 	printf("[displayManager] %d termination\n", gettid());
    //TODO

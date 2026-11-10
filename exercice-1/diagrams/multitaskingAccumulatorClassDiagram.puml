@@ -52,7 +52,7 @@ AcquisitionManager .r.|> IAcquisitionManager : implement
 MessageAdder .r.|> IMessageAdder : implement
 MessageAdder *-d- Msg 
 
-DisplayManager .d.|> IDisplay : implement
+DisplayManager .d.|> IDisplay : use
 
 MessageAdder ..> IAcquisitionManager : use
 DisplayManager ..> IMessageAdder : use

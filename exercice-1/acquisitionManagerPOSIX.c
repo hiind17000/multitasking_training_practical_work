@@ -22,8 +22,10 @@ static void *produce(void *params);
 /**
 * Semaphores and Mutex
 */
-//TODO
-
+//TODO (done en theorie)
+pthread_mutex_t m1;
+sem_t *semaphorelibre; //Initialisé à 0 car buffer vide
+sem_t *semaphoreoccupe; //Initialisé à la taille du buffer (1024)
 /*
 * Creates the synchronization elements.
 * @return ERROR_SUCCESS if the init is ok, ERROR_INIT otherwise
@@ -39,6 +41,7 @@ static unsigned int createSynchronizationObjects(void)
 {
 
 	//TODO
+
 	printf("[acquisitionManager]Semaphore created\n");
 	return ERROR_SUCCESS;
 }
