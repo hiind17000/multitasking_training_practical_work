@@ -48,5 +48,10 @@ runtestandset: clean testandset
 
 pumls: $(PNGS)
 
+PLANTUML ?= docker run --rm -i ghcr.io/plantuml/plantuml -pipe
+
 diagrams/%.png: diagrams/%.puml
-	docker run --rm -i ghcr.io/plantuml/plantuml -pipe < $< > $@
+	$(PLANTUML) < $< > $@
+
+#diagrams/%.png: diagrams/%.puml
+#	docker run --rm -i ghcr.io/plantuml/plantuml -pipe < $< > $@
