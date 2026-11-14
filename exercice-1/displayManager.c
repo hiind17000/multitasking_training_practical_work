@@ -32,10 +32,12 @@ static void *display( void *parameters )
 {
 	D(printf("[displayManager]Thread created for display with id %d\n", gettid()));
 	unsigned int diffCount = 0;
+	MSG_BLOCK s;
 	while(diffCount < DISPLAY_LOOP_LIMIT){
 		sleep(DISPLAY_SLEEP_TIME);
-		//TODO
+		//TODO (là je ne comprends pas)
 	}
 	printf("[displayManager] %d termination\n", gettid());
-   //TODO
+   //TODO(done)
+   return NULL;
 }
