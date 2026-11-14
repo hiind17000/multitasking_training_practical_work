@@ -92,7 +92,7 @@ static void *sum( void *parameters )
 	}
 	printf("[messageAdder] %d termination\n", gettid());
 	//TODO(done)
-	return NULL
+	return NULL;
 }
 
 
